@@ -12,6 +12,8 @@ package card;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author srinivsi
+ * Modifier - Parminder Singh
+ * Student ID - 991699873
  */
 public class Card {
 
@@ -46,7 +48,9 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
+   public boolean equals(Card other){
+    return this.getSuit().equalsIgnoreCase(other.getSuit())&& this.getValue() == other.getValue();
+   }
    
     
 }
