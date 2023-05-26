@@ -30,15 +30,15 @@ public class CardTrick {
         }
       
          
-         Card userc = new Card();
-         userc.setValue(7);
-         userc.setSuit("Diamonds");
+         Card luckyCard = new Card();
+         luckyCard.setValue(11);
+         luckyCard.setSuit("Spades");
          
          int chance = 0 ;
          
          for( int i=0; i<magicHand.length; i++){
              
-             if(magicHand[i].equals(userc)){
+             if(magicHand[i].equals(luckyCard)){
                  chance = 1;
              }
          }
