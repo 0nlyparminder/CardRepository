@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package card;
-import java.util.Scanner;
 
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
@@ -29,16 +28,11 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
-        Scanner scan = new Scanner (System.in);
-         System.out.println("Enter the number you want:Choose between 1 and 13");
-         int usernum = scan.nextInt();
-         System.out.println("Enter the suit you want:Hearts, Diamonds, Spades or Clubs");
-         String usersuit = scan.next();
-        
+      
          
          Card userc = new Card();
-         userc.setValue(usernum);
-         userc.setSuit(usersuit);
+         userc.setValue(7);
+         userc.setSuit("Diamonds");
          
          int chance = 0 ;
          
